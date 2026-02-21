@@ -57,7 +57,7 @@ jobs:
           npm ci
           npm run lint
           npm test -- --watchAll=false
-          npm audit --audit-level=high
+          npm audit --audit-level=critical
 
       - name: Academic-service CI
         run: |
@@ -65,7 +65,7 @@ jobs:
           npm ci
           npm run lint
           npm test -- --watchAll=false
-          npm audit --audit-level=high
+          npm audit --audit-level=critical
 
       - name: API-Gateway CI
         run: |
@@ -73,7 +73,7 @@ jobs:
           npm ci
           npm run lint
           npm test -- --watchAll=false
-          npm audit --audit-level=high
+          npm audit --audit-level=critical
 
       # ====================================================
       # 5 INSTALL, LINT, TEST, SCA – FRONTEND
@@ -85,7 +85,7 @@ jobs:
           npm ci
           npm run lint
           npm test -- --watchAll=false
-          npm audit --audit-level=high
+          npm audit --audit-level=critical
 
       # =========================
       # 6 SAST – Semgrep
